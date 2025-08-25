@@ -1,12 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  AnimatePresence,
-} from "framer-motion";
+import Image from "next/image";
+import { motion, useScroll, AnimatePresence } from "framer-motion";
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -35,9 +31,11 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10">
-                <img
+                <Image
                   src="/figs.svg"
                   alt="Figs Logo"
+                  width={40}
+                  height={40}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -148,7 +146,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              what we're <em className="text-purple-600">building</em>
+              what we&apos;re <em className="text-purple-600">building</em>
             </motion.h2>
             <motion.p
               className="text-large text-2xl text-gray-600 max-w-3xl mx-auto"
@@ -157,9 +155,10 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              India's Gen Z faces an "Aspiration-Action Gap." Figs bridges this
-              with <span className="text-accent">smart, personalized</span>{" "}
-              financial tools.
+              India&apos;s Gen Z faces an &ldquo;Aspiration-Action Gap.&rdquo;
+              Figs bridges this with{" "}
+              <span className="text-accent">smart, personalized</span> financial
+              tools.
             </motion.p>
           </div>
 
@@ -519,9 +518,11 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <div className="w-32 h-32 mx-auto mb-6 relative overflow-hidden rounded-full border-4 border-purple-100 group-hover:border-purple-300 transition-colors">
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
+                    width={128}
+                    height={128}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -555,9 +556,11 @@ export default function Home() {
           <div className="text-center">
             <div className="flex items-center justify-center space-x-3 mb-6">
               <div className="w-12 h-12">
-                <img
+                <Image
                   src="/figs.svg"
                   alt="Figs Logo"
+                  width={48}
+                  height={48}
                   className="w-full h-full object-contain"
                 />
               </div>
