@@ -473,7 +473,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="section-heading text-6xl md:text-7xl text-gray-900 mb-6">
-              Meet the <em className="text-purple-600">Team</em>
+              meet the <em className="text-purple-600">Team</em>
             </h2>
             <p className="text-large text-2xl text-gray-600 max-w-3xl mx-auto">
               Passionate innovators dedicated to empowering your
