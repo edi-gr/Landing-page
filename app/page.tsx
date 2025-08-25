@@ -435,7 +435,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="section-heading text-6xl md:text-7xl text-gray-900 mb-8">
-              Join our <em className="text-purple-600">community</em>
+              join our <em className="text-purple-600">community</em>
             </h2>
             <p className="text-large text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
               Building in public with Gen Z. Share ideas, get sneak peeks, and
