@@ -94,14 +94,14 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={() => setShowModal(true)}
-                  className="btn-primary"
+                  className="btn-primary text-center"
                 >
                   start your journey
                 </button>
                 <a
                   href="https://www.youtube.com/embed/WvKBE9BDlGY"
                   target="_blank"
-                  className="btn-secondary"
+                  className="btn-secondary text-center block"
                 >
                   watch guide
                 </a>
