@@ -32,7 +32,7 @@ export default function Home() {
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10">
                 <Image
-                  src="/figs.svg"
+                  src="/app_logo-2.svg"
                   alt="Figs Logo"
                   width={40}
                   height={40}
@@ -569,7 +569,7 @@ export default function Home() {
             <div className="flex items-center justify-center space-x-3 mb-6">
               <div className="w-12 h-12">
                 <Image
-                  src="/figs.svg"
+                  src="/app_logo-2.svg"
                   alt="Figs Logo"
                   width={48}
                   height={48}

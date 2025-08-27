@@ -5,8 +5,11 @@
  width="300.000000pt" height="300.000000pt" viewBox="0 0 300.000000 300.000000"
  preserveAspectRatio="xMidYMid meet">
 
+<!-- White background circle -->
+<circle cx="150" cy="150" r="145" fill="#ffffff" stroke="none"/>
+
 <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="#000000" stroke="#000000" stroke-width="20">
 <path d="M1319 2010 c-217 -53 -394 -194 -493 -392 -56 -114 -75 -184 -83
 -309 -21 -345 195 -667 522 -776 73 -25 94 -27 235 -28 172 0 219 10 343 71
 85 42 117 64 191 134 150 141 236 345 236 559 0 222 -81 406 -246 560 -89 83
