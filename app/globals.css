@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Crimson+Pro:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: "Crimson Pro", "Times New Roman", serif;
     scroll-behavior: smooth;
   }
 
@@ -14,16 +14,13 @@
     overflow-x: hidden;
   }
 
+  /* Single serif font for everything */
+  .font-serif {
+    font-family: "Crimson Pro", "Times New Roman", serif;
+  }
+
   .font-display {
-    font-family: "Playfair Display", serif;
-  }
-
-  .font-heading {
-    font-family: "Space Grotesk", sans-serif;
-  }
-
-  .font-body {
-    font-family: "Inter", sans-serif;
+    font-family: "Crimson Text", "Times New Roman", serif;
   }
 
   * {
@@ -51,14 +48,12 @@
 @layer components {
   /* Hero text styles */
   .hero-text {
-    font-family: "Playfair Display", serif;
     font-weight: 700;
     line-height: 0.9;
     letter-spacing: -0.02em;
   }
 
   .hero-accent {
-    font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
     text-transform: lowercase;
     font-style: italic;
@@ -66,15 +61,13 @@
 
   /* Section headings */
   .section-heading {
-    font-family: "Playfair Display", serif;
     font-weight: 600;
     line-height: 1.1;
     letter-spacing: -0.01em;
   }
 
   .section-subheading {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: lowercase;
   }
 
@@ -92,26 +85,24 @@
   /* Buttons with character */
   .btn-primary {
     @apply px-8 py-4 bg-purple-600 text-white rounded-2xl font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105;
-    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
     letter-spacing: -0.01em;
   }
 
   .btn-secondary {
     @apply px-8 py-4 border-2 border-purple-600 text-purple-600 rounded-2xl font-medium hover:bg-purple-50 transition-all duration-300;
-    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
     letter-spacing: -0.01em;
   }
 
   /* Decorative elements */
   .text-accent {
     @apply text-purple-600;
-    font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
     font-style: italic;
   }
 
   .text-large {
-    font-family: "Playfair Display", serif;
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: -0.01em;
@@ -119,8 +110,7 @@
 
   /* Navigation styles */
   .nav-link {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.01em;
     @apply text-gray-700 hover:text-purple-600 transition-colors duration-300;
   }
@@ -128,12 +118,10 @@
   /* Step indicators */
   .step-number {
     @apply w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold;
-    font-family: "Space Grotesk", sans-serif;
   }
 
   /* Quote styles */
   .testimonial-quote {
-    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-style: italic;
     line-height: 1.5;

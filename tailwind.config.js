@@ -30,10 +30,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        display: ["Playfair Display", "serif"],
-        heading: ["Space Grotesk", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        serif: ["Crimson Pro", "Times New Roman", "serif"],
+        display: ["Crimson Text", "Times New Roman", "serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",

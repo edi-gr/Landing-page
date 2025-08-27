@@ -39,7 +39,7 @@ export default function Home() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-2xl font-bold font-heading">figs</span>
+              <span className="text-2xl font-bold font-serif">figs</span>
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
@@ -72,7 +72,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
             >
-              <h1 className="hero-text text-7xl md:text-8xl lg:text-9xl text-gray-900 mb-8">
+              <h1 className="hero-text font-display text-7xl md:text-8xl lg:text-9xl text-gray-900 mb-8">
                 Empower
                 <br />
                 <span className="text-purple-600">your</span>
@@ -81,10 +81,10 @@ export default function Home() {
               </h1>
 
               <div className="mb-8">
-                <p className="text-accent text-xl mb-4">
+                <p className="text-accent font-serif text-xl mb-4">
                   through smart investing
                 </p>
-                <p className="text-large text-2xl text-gray-600 max-w-lg">
+                <p className="text-large font-display text-2xl text-gray-600 max-w-lg">
                   Find clarity in your financial journey and let our intelligent
                   platform guide your investment decisions with{" "}
                   <em>confidence</em>.
@@ -118,7 +118,7 @@ export default function Home() {
                 <div className="w-24 h-24 bg-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                   <span className="text-3xl text-white">📱</span>
                 </div>
-                <h3 className="section-heading text-3xl text-gray-900 mb-4">
+                <h3 className="section-heading font-display text-3xl text-gray-900 mb-4">
                   the app is <em>live</em>
                 </h3>
                 <p className="text-gray-600 mb-6">
@@ -141,7 +141,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <motion.h2
-              className="section-heading text-6xl md:text-7xl text-gray-900 mb-6"
+              className="section-heading font-display text-6xl md:text-7xl text-gray-900 mb-6"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -149,7 +149,7 @@ export default function Home() {
               what we&apos;re <em className="text-purple-600">building</em>
             </motion.h2>
             <motion.p
-              className="text-large text-2xl text-gray-600 max-w-3xl mx-auto"
+              className="text-large font-display text-2xl text-gray-600 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -157,8 +157,10 @@ export default function Home() {
             >
               India&apos;s Gen Z faces an &ldquo;Aspiration-Action Gap.&rdquo;
               Figs bridges this with{" "}
-              <span className="text-accent">smart, personalized</span> financial
-              tools.
+              <span className="text-accent font-serif">
+                smart, personalized
+              </span>{" "}
+              financial tools.
             </motion.p>
           </div>
 
@@ -332,10 +334,10 @@ export default function Home() {
                 <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
                   {feature.icon}
                 </div>
-                <h3 className="section-subheading text-2xl text-gray-900 mb-4">
+                <h3 className="section-subheading font-serif text-2xl text-gray-900 mb-4">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed font-body">
+                <p className="text-gray-600 leading-relaxed font-serif">
                   {feature.description}
                 </p>
               </motion.div>
@@ -348,7 +350,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <p className="text-accent text-xl mb-6">
+            <p className="text-accent font-serif text-xl mb-6">
               Ready to start building wealth?
             </p>
             <button onClick={() => setShowModal(true)} className="btn-primary">
@@ -367,12 +369,12 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-heading text-6xl md:text-7xl text-gray-900 mb-6">
+            <h2 className="section-heading font-display text-6xl md:text-7xl text-gray-900 mb-6">
               how it <em className="text-purple-600">works</em>
             </h2>
-            <p className="text-large text-2xl text-gray-600">
+            <p className="text-large font-display text-2xl text-gray-600">
               Get started with Figs in just a few{" "}
-              <span className="text-accent">simple steps</span>.
+              <span className="text-accent font-serif">simple steps</span>.
             </p>
           </motion.div>
 
@@ -413,10 +415,10 @@ export default function Home() {
               >
                 <div className="step-number text-xl">{step.step}</div>
                 <div className="flex-1">
-                  <h3 className="section-subheading text-3xl text-gray-900 mb-4">
+                  <h3 className="section-subheading font-serif text-3xl text-gray-900 mb-4">
                     {step.title}
                   </h3>
-                  <p className="text-large text-xl text-gray-600 max-w-2xl">
+                  <p className="text-large font-display text-xl text-gray-600 max-w-2xl">
                     {step.description}
                   </p>
                 </div>
@@ -434,27 +436,27 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-heading text-6xl md:text-7xl text-gray-900 mb-8">
+            <h2 className="section-heading font-display text-6xl md:text-7xl text-gray-900 mb-8">
               join our <em className="text-purple-600">community</em>
             </h2>
-            <p className="text-large text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-large font-display text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
               Building in public with Gen Z. Share ideas, get sneak peeks, and
               shape the future of{" "}
-              <span className="text-accent">personal finance</span>!
+              <span className="text-accent font-serif">personal finance</span>!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a
                 href="https://chat.whatsapp.com/BSvNztVhvGiGy5lE1Wyx7l"
                 target="_blank"
-                className="px-8 py-4 bg-green-600 text-white rounded-2xl font-medium hover:bg-green-700 transition-all duration-300 transform hover:scale-105 font-heading"
+                className="px-8 py-4 bg-green-600 text-white rounded-2xl font-medium hover:bg-green-700 transition-all duration-300 transform hover:scale-105 font-serif"
               >
                 whatsapp community
               </a>
               <a
                 href="https://www.instagram.com/figsapp.in"
                 target="_blank"
-                className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-2xl font-medium hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 font-heading"
+                className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-2xl font-medium hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 font-serif"
               >
                 @figsapp.in
               </a>
@@ -472,12 +474,12 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-heading text-6xl md:text-7xl text-gray-900 mb-6">
+            <h2 className="section-heading font-display text-6xl md:text-7xl text-gray-900 mb-6">
               meet the <em className="text-purple-600">Team</em>
             </h2>
-            <p className="text-large text-2xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-large font-display text-2xl text-gray-600 max-w-3xl mx-auto">
               Passionate innovators dedicated to empowering your
-              <span className="text-accent"> financial future</span>.
+              <span className="text-accent font-serif"> financial future</span>.
             </p>
           </motion.div>
 
@@ -488,18 +490,24 @@ export default function Home() {
                 role: "Co-founder, CEO",
                 linkedin: "https://www.linkedin.com/in/deven-jain/",
                 image: "/deven.jpg",
+                color: "purple",
+                borderColors: "border-purple-100 group-hover:border-purple-400",
               },
               {
                 name: "Edson",
                 role: "Co-founder, COO",
                 linkedin: "https://www.linkedin.com/in/edson-rebello/",
                 image: "/edson.jpg",
+                color: "blue",
+                borderColors: "border-blue-100 group-hover:border-blue-400",
               },
               {
                 name: "Shadab",
                 role: "Co-founder, CTO",
                 linkedin: "https://in.linkedin.com/in/shadabkalim",
                 image: "/shadab.jpg",
+                color: "green",
+                borderColors: "border-green-100 group-hover:border-green-400",
               },
               {
                 name: "Pavan Gupta",
@@ -507,17 +515,21 @@ export default function Home() {
                 linkedin:
                   "https://www.linkedin.com/in/poddutur-pavan-gupta-b7b6102a8",
                 image: "/poddutur pavan gupta.jpg",
+                color: "yellow",
+                borderColors: "border-yellow-100 group-hover:border-yellow-400",
               },
             ].map((member, index) => (
               <motion.div
                 key={index}
-                className="feature-card group text-center"
+                className={`feature-card group text-center hover:shadow-${member.color}-100 hover:border-${member.color}-200`}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <div className="w-32 h-32 mx-auto mb-6 relative overflow-hidden rounded-full border-4 border-purple-100 group-hover:border-purple-300 transition-colors">
+                <div
+                  className={`w-32 h-32 mx-auto mb-6 relative overflow-hidden rounded-full border-4 ${member.borderColors} transition-colors`}
+                >
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -526,10 +538,10 @@ export default function Home() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="section-subheading text-2xl text-gray-900 mb-2">
+                <h3 className="section-subheading font-serif text-2xl text-gray-900 mb-2">
                   {member.name}
                 </h3>
-                <p className="text-gray-600 mb-6 font-body">{member.role}</p>
+                <p className="text-gray-600 mb-6 font-serif">{member.role}</p>
                 <a
                   href={member.linkedin}
                   target="_blank"
@@ -564,15 +576,15 @@ export default function Home() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-3xl font-bold font-heading">figs</span>
+              <span className="text-3xl font-bold font-serif">figs</span>
             </div>
 
-            <p className="text-xl text-gray-300 mb-8 font-body">
+            <p className="text-xl text-gray-300 mb-8 font-serif">
               empowering your financial future through{" "}
               <em className="text-purple-400">smart investing</em>
             </p>
 
-            <div className="flex justify-center space-x-8 text-gray-400 mb-8 font-heading">
+            <div className="flex justify-center space-x-8 text-gray-400 mb-8 font-serif">
               <a href="#" className="hover:text-purple-400 transition-colors">
                 privacy
               </a>
@@ -588,7 +600,7 @@ export default function Home() {
               </a>
             </div>
 
-            <p className="text-gray-500 font-body">
+            <p className="text-gray-500 font-serif">
               © 2025 figs. all rights reserved.
             </p>
           </div>
@@ -610,7 +622,7 @@ export default function Home() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
             >
-              <h3 className="section-heading text-3xl text-gray-900 mb-6 text-center">
+              <h3 className="section-heading font-display text-3xl text-gray-900 mb-6 text-center">
                 download <em className="text-purple-600">figs</em>
               </h3>
 
@@ -622,7 +634,7 @@ export default function Home() {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 font-body"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 font-serif"
                   required
                 />
                 <input
@@ -632,7 +644,7 @@ export default function Home() {
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
                   }
-                  className="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 font-body"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 font-serif"
                 />
                 <input
                   type="tel"
@@ -641,14 +653,14 @@ export default function Home() {
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })
                   }
-                  className="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 font-body"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 font-serif"
                 />
 
                 <div className="flex space-x-3 pt-4">
                   <button
                     type="button"
                     onClick={() => setShowModal(false)}
-                    className="flex-1 px-4 py-3 border border-gray-200 text-gray-700 rounded-2xl hover:bg-gray-50 transition-colors font-heading"
+                    className="flex-1 px-4 py-3 border border-gray-200 text-gray-700 rounded-2xl hover:bg-gray-50 transition-colors font-serif"
                   >
                     cancel
                   </button>
